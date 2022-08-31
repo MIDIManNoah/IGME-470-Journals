@@ -11,5 +11,7 @@ The experience involved five microphones, each representing a different brass in
 The art installation is made up of several components behind the scenes. Each microphone is routed to a frequency analyzer that converts the input into MIDI notes. These notes are then passed through to computer software that takes the notes and uses AI to generate the music "determining duration, frequency and velocity of a note at a time". An Arduino controls the colored LED lights.
 
 Links:
+
 https://www.aether-hemera.com/Work/Detail/Brass
+
 https://www.aether-hemera.com/Blog/2012/6/19
