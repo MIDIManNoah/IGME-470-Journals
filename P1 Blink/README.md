@@ -12,11 +12,26 @@ Next, I programmed code to make the LED flash whenever a counter went down to 0.
 
 Then, I sent the code to the Arduino and tested it to make sure the LED flashed appropriately. After that, I added code to make the other LED flash in the opposite pattern from the first when the switch was on.
 
+One issue I ran into was that the potentiometer cranked all the way to the right made the LEDs flash slower. I solved this by subtracting the maximum possible input value by the current input value and using that to determine how much to subtract from the flash counter.
+
 # Pictures / Video
 
-(ADD PICTURES HERE)
+Top-down view of the project:
+![Breadboard with an Arduino, two LEDs, one potentionmeter, and one switch](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Topdown.jpg?raw=true)
 
-Video link: 
+Arduino unplugged:
+![Same, but at different angle](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Angled.jpg?raw=true)
+
+Switch off:
+![Same, but with one LED on](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Red%20LED.jpg?raw=true)
+
+Switch on:
+![Same, but with the switch on](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Red%20LED%202.jpg?raw=true)
+
+Switch on (other LED):
+![Same, but with the other LED on](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Yellow%20LED.jpg?raw=true)
+
+Video link: https://drive.google.com/file/d/1pnepoA5hmKAB7CSISWnlRhuyvq5SZhvM/view?usp=sharing
 
 # Diagram
 
