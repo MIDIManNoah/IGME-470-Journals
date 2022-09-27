@@ -14,6 +14,10 @@ Then, I sent the code to the Arduino and tested it to make sure the LED flashed 
 
 One issue I ran into was that the potentiometer cranked all the way to the right made the LEDs flash slower. I solved this by subtracting the maximum possible input value by the current input value and using that to determine how much to subtract from the flash counter.
 
+# Code
+
+https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Code.ino
+
 # Pictures / Video
 
 Top-down view of the project:
