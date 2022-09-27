@@ -35,7 +35,7 @@ Video link: https://drive.google.com/file/d/1pnepoA5hmKAB7CSISWnlRhuyvq5SZhvM/vi
 
 # Diagram
 
-(ADD PICTURE OF FRITZING DIAGRAM HERE)
+![Diagram version of the top-down view](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P1%20Blink/PComp%20-%20P1%20Blink%20Diagram.png?raw=true)
 
 # References
 
