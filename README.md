@@ -13,3 +13,7 @@ Create an arduino project using two digital inputs and two digital LED outputs a
 # P1 - Blink
 
 Create an arduino project using two or more digital inputs and two or more digital outputs. Write about the user experience and the development process.
+
+# P2 - Move
+
+Create a "poetic experience" using a "novel sensor", a transistor (or transistors) to control outputs, and serial communication to an on-screen app. Write about the experience goal and the development process.
