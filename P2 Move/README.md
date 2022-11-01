@@ -10,21 +10,28 @@ First, I created a project in Unity with a scene that included a rectangular sur
 
 Next, I started programming a distance check for the Arduino using the HC-SR04 sensor as an input. I borrowed most of the code from an example in class (linked to in the References section below). I went through the process twice since I didn't know if I programmed the distance check correctly the first time. I used an LED as a temporary output to make sure the check worked (an example we went through in class), then when I was sure it worked, I removed the LED output.
 
-Then, I modified the Unity project to communicate with the Arduino through a serial port. I wrote code that took the printed output of the Arduino, converted it to a float, divided it by a number (CHANGE), subtracted it by 1, then set the glove's Z posiiton to that number. I found that the distance sensor was a bit unreliable for small objects, so I came up with an idea to use a tissue box to cover more surface area, making it easier for the sensor to pick up.
+Then, I modified the Unity project to communicate with the Arduino through a serial port. I wrote code that took the printed output of the Arduino, converted it to a float, divided it by 200, subtracted it by 1, then set the glove's Z posiiton to that number. I found that the distance sensor was a bit unreliable for small objects, so I came up with an idea to use a tissue box to cover more surface area, making it easier for the sensor to pick up.
 
 After that, I added a servo motor into the mix to indicate when the glove would get in a position where it could hit the cube tower. The servo motor goes downward when the glove is out of range and goes upward when the glove is in range. I added additional code to the distance check to handle this behavior. The servo's value is set to 180 when the distance is greater than or equal to 500 units, and the value is set to 0 when the distance is less than 500 units. I also made some changes to the code to calculate the average of ten values input and then print that out to the serial port. This prevented the glove from jittering as much as it did before this change.
 
-Finally, I put some finishing touches on the presentation by covering the tissue box in red construction paper to make it look more like a glove, cutting out a small triangle to paste onto the servo motor, and creating and printing out a target graphic to slide onto the distance sensor.
+Finally, I put some finishing touches on the presentation by covering the tissue box in brown construction paper to make it look more like a glove, cutting out a small triangle to paste onto the servo motor, and drawing a target, cutting it out with holes, to slide onto the distance sensor.
 
 # Code
 
-(INSERT LINK HERE)
+https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P2%20Move/PComp%20-%20P2%20Move%20Code.ino
 
 # Pictures / Video
 
-(INSERT PICTURES HERE)
+Top-down view of the project:
+![Breadboard with an Arduino, a distance sensor, and a servo motor](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P2%20Move/PComp%20-%20P2%20Move%20Top%20Down%20View.jpg?raw=true)
 
-(INSERT VIDEO HERE)
+Servo motor down:
+![Same, but at different angle](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P2%20Move/PComp%20-%20P2%20Move%20Servo%20Down.jpg?raw=true)
+
+Servo motor up:
+![Same, but with the servo pointing up](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P2%20Move/PComp%20-%20P2%20Move%20Servo%20Up.jpg?raw=true)
+
+Video link: https://drive.google.com/file/d/1_pPxsaXbeynpk-hOwB109bdgeWiqOqzY/view?usp=share_link
 
 # Diagram
 
