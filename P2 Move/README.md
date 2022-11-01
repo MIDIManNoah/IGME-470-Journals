@@ -2,7 +2,7 @@
 
 For my second project (Move), I decided to create a simple Unity app controlled by an Arduino board using a distance sensor as an input and a servo motor as an output. 
 
-My experience goal is to provide users with a simple and fun app to kill time with (change the wording?).
+My experience goal is to provide users with a simple and fun mini-game to mess around with.
 
 # Development Process
 
@@ -12,7 +12,7 @@ Next, I started programming a distance check for the Arduino using the HC-SR04 s
 
 Then, I modified the Unity project to communicate with the Arduino through a serial port. I wrote code that took the printed output of the Arduino, converted it to a float, divided it by a number (CHANGE), subtracted it by 1, then set the glove's Z posiiton to that number. I found that the distance sensor was a bit unreliable for small objects, so I came up with an idea to use a tissue box to cover more surface area, making it easier for the sensor to pick up.
 
-After that, I added a servo motor into the mix to indicate when the glove would get in a position where it could hit the cube tower. The servo motor goes downward when the glove is out of range and goes upward when the glove is in range. I added additional code to the distance check to handle this behavior (INSERT CODE EXAMPLE HERE). I also made some changes to the code to calculate the average of ten values input and then print that out to the serial port. This prevented the glove from jittering as much as it did before this change.
+After that, I added a servo motor into the mix to indicate when the glove would get in a position where it could hit the cube tower. The servo motor goes downward when the glove is out of range and goes upward when the glove is in range. I added additional code to the distance check to handle this behavior. The servo's value is set to 180 when the distance is greater than or equal to 500 units, and the value is set to 0 when the distance is less than 500 units. I also made some changes to the code to calculate the average of ten values input and then print that out to the serial port. This prevented the glove from jittering as much as it did before this change.
 
 Finally, I put some finishing touches on the presentation by covering the tissue box in red construction paper to make it look more like a glove, cutting out a small triangle to paste onto the servo motor, and creating and printing out a target graphic to slide onto the distance sensor.
 
