@@ -4,22 +4,33 @@
  Bits of code borrowed from these sources:
  - https://create.arduino.cc/editor/wmharris/411cdb7c-3c68-4c38-9162-6686ca95db31/preview
  - https://docs.arduino.cc/learn/electronics/servo-motors
+
+ Required libraries:
+ - Servo
+ - RunningAverage
+ (Both of these should be available under "Manage Libraries")
 */
 
 #include <Servo.h>
 #include <RunningAverage.h>
 
-RunningAverage average = RunningAverage(10);
+// Make an object that stores 8 floats at a time
+// Use addValue to add values to it
+// Use this to calculate the average input
+RunningAverage average = RunningAverage(8);
 
 Servo myServo; // Create an object for controlling the servo
 const int servoPin = 5;
 
+// Define pin numbers used by and for the distance sensor
 const int trigPin = 3;
 const int echoPin = 2;
 
+// Store the distance and previous distance in two variables
 unsigned long oldDist = 0;
 unsigned long duration = 0;
 
+// Setup the pins and serial communication
 void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
