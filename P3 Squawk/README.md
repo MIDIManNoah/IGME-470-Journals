@@ -1,4 +1,4 @@
-# Project 2 - Move
+# Project 3 - Squawk
 
 For my third and final project (Squawk), I decided to create three different melodies played back on a simple speaker that are controlled by paperclip-based switches. The notes of the melodies are displayed on a piano in a Unity app.
 
