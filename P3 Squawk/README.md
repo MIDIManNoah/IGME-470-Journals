@@ -18,7 +18,9 @@ WIP
 
 # Diagram
 
-WIP
+![Diagram of the top-down view](https://github.com/MIDIManNoah/IGME-470-Journals/blob/main/P3%20Squawk/PComp%20-%20P3%20Squawk%20Diagram.png?raw=true)
+
+The loose wires represent alligator clips with paperclips attached on the end. The one attached to ground transmits power, while the other three act as inputs for the power connection.
 
 # References
 
