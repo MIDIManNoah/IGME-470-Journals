@@ -2,7 +2,7 @@
 
 For my third and final project (Squawk), I decided to create three different melodies played back on a piezo speaker that are controlled by paperclip-based switches. The notes of the melodies are displayed on a keyboard in a Unity app.
 
-My experience goal is to let users mix and match melodies and see them displayed in the app.
+My experience goal is to let users mix and match melodies by "activating" paperclips and see the notes displayed in the app.
 
 # Development Process
 
