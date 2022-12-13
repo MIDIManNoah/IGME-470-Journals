@@ -46,4 +46,3 @@ The loose wires represent alligator clips with paperclips attached on the end. T
 
 - Class Notes (3-1, 7-2, 11-2)
 - https://create.arduino.cc/editor/wmharris/01bb396f-6707-42c8-8c8f-8c167f599acb/preview
-- WIP
